@@ -32,7 +32,7 @@ def easter(update, context):
     update.message.reply_text('I Am From RightWing , Doesnot believe in these Shits .')
 
 def eggs(update, context):
-    update.message.reply_text('you Chandaal ! Don't Say it again . I am Vegetarion .....')
+    update.message.reply_text("you Chandaal ! Don't Say it again . I am Vegetarion .....")
 
 
 def echo(update, context):

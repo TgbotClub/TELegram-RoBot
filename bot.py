@@ -31,7 +31,7 @@ def source(update, context):
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text(update.message.text+'\n\n\nRegards 🌟\n       @PyEcho_RoboT🤖')
+    update.message.reply_text(update.message.text+'\n\n@PyEcho_RoboT')
 
 
 def error(update, context):

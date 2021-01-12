@@ -25,19 +25,13 @@ def about(update, context):
     update.message.reply_text('I Am Nothing , Literally Nothing  ...!!!')
 
 
-def papa(update, context):
-    update.message.reply_text('For Me Everything is my Father @priyanshu_bhardwaj , Love you papa:)')
-
-def easter(update, context):
-    update.message.reply_text('I Am From RightWing , Doesnot believe in these Shits .')
-
-def eggs(update, context):
-    update.message.reply_text("you Chandaal ! Don't Say it again . I am Vegetarion .....")
+def source(update, context):
+    update.message.reply_text('Here is My GitHub Source Code \nhttps://github.com/bhardwajjEE/EChoRoBot/edit/main/bot.py')
 
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text(update.message.text)
+    update.message.reply_text('Message is EchoEd By @PyECho_Robot'+update.message.text)
 
 
 def error(update, context):

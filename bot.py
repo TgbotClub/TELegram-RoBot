@@ -1,4 +1,5 @@
 import logging
+Import telebot
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
@@ -11,9 +12,20 @@ logger = logging.getLogger(__name__)
 
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
-def start(update, context):
-    """Send a message when the command /start is issued."""
-    update.message.reply_text('Why You Bothering Me 🐼 ...!!!')
+
+@bot.message_handler(commands=['start'])
+def start(message):
+   keyboard = telebot.types.InlineKeyboardMarkup()
+   keyboard.add(
+       telebot.types.InlineKeyboardButton(
+           'My Father 🖤', url='telegram.me/priyanshu_bhardwaj'
+       )
+   )   
+   bot.send_message(
+       message.chat.id,
+       'Greetings! But Why are You Here...🤔',
+       reply_markup=keyboard
+   )
 
 
 def help(update, context):

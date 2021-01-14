@@ -17,13 +17,6 @@ def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Why You Bothering Me 🐼 ...!!!')
 
-   keyboard = telebot.types.InlineKeyboardMarkup()
-   keyboard.add(
-       telebot.types.InlineKeyboardButton(
-           'My Father 🖤', url='telegram.me/priyanshu_bhardwaj'
-       )
-   ) 
-
 def help(update, context):
     """Send a message when the command /help is issued."""
     update.message.reply_text('I do not help For Free 😏...!!!')

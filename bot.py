@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Why You Bothering Me 🐼 ...!!!')
+    update.message.reply_text('Welcome  .....!!!')
 
 
 def help(update, context):
@@ -26,12 +26,12 @@ def about(update, context):
 
 
 def source(update, context):
-    update.message.reply_text('Here is My GitHub Source Code 👀:- \n\n https://github.com/bhardwajjEE/EChoRoBot')
+    update.message.reply_text('https://github.com/bhardwajjEE/telegram-robot \n\n .......♥️')
 
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text(update.message.text+'\n\n@PyEcho_RoboT')
+    update.message.reply_text(update.message.text)
 
 
 def error(update, context):
